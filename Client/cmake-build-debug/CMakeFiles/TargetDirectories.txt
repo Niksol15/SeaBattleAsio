@@ -1,0 +1,3 @@
+D:/Project/ComputingArchitecture/Lab1/Client/cmake-build-debug/CMakeFiles/Client.dir
+D:/Project/ComputingArchitecture/Lab1/Client/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Project/ComputingArchitecture/Lab1/Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
