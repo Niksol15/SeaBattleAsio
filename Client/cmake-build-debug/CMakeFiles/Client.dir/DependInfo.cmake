@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Project/ComputingArchitecture/Lab1/Client/main.cpp" "D:/Project/ComputingArchitecture/Lab1/Client/cmake-build-debug/CMakeFiles/Client.dir/main.cpp.obj"
+  "/home/niksol/Projects/SeaBattleAsio/Client/main.cpp" "/home/niksol/Projects/SeaBattleAsio/Client/cmake-build-debug/CMakeFiles/Client.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "D:/SDK/asio-1.18.0/include"
+  "../D:/SDK/asio-1.18.0/include"
   )
 
 # Targets to which this target links.

@@ -1,4 +1,4 @@
-"D:\CLion 2019.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Project\ComputingArchitecture\Lab1\Client
+/snap/clion/139/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/bin/clang-10 -DCMAKE_CXX_COMPILER=/bin/clang++-10 -G "CodeBlocks - Unix Makefiles" /home/niksol/Projects/SeaBattleAsio/Client
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/Project/ComputingArchitecture/Lab1/Client/cmake-build-debug
+-- Build files have been written to: /home/niksol/Projects/SeaBattleAsio/Client/cmake-build-debug
