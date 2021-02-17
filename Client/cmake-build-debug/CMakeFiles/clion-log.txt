@@ -1,4 +1,0 @@
-/snap/clion/139/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/bin/clang-10 -DCMAKE_CXX_COMPILER=/bin/clang++-10 -G "CodeBlocks - Unix Makefiles" /home/niksol/Projects/SeaBattleAsio/Client
--- Configuring done
--- Generating done
--- Build files have been written to: /home/niksol/Projects/SeaBattleAsio/Client/cmake-build-debug

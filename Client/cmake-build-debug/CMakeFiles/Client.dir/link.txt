@@ -1,1 +1,0 @@
-/bin/clang++-10  -g   CMakeFiles/Client.dir/main.cpp.o  -o Client  -lws2_32 -lwsock32 
