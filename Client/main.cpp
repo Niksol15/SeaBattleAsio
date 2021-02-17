@@ -8,17 +8,17 @@ constexpr char kDefaultIp[] = "127.0.0.1";
 
 int main() {
     Client client;
-    if(client.connect(kDefaultIp, kDefaultPort)){
+    if (client.connect(kDefaultIp, kDefaultPort)) {
         cout << "Connected\n";
     } else {
-        cout << "Problem with connection\n";
+        cout << "Problems with connecting to the server\n";
         return 0;
     }
-    while (true){
-        string str;
+    string str;
+    while (true) {
         getline(cin, str);
-        if(!client.send(str) || str == "dei"){
-            cout << "Crashed\n";
+        if (!client.send(str)) {
+            cout << "Problem with the sending message arose";
             break;
         }
         cout << client.receive();

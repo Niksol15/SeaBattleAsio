@@ -14,15 +14,16 @@ class Client {
 public:
     Client();
 
-    bool connect(const std::string& address, uint16_t port);
+    bool connect(const std::string &address, uint16_t port);
 
-    bool send(const std::string & request);
+    bool send(const std::string &request);
 
     std::string receive();
 
     void disconnect();
 
     ~Client();
+
 private:
     boost::system::error_code m_ec;
     boost::asio::io_context m_context;
