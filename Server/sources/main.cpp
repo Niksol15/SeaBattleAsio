@@ -35,32 +35,6 @@ enum class RequestType{
     Unknown
 };
 
-class Logger{
-public:
-    Logger(): fout("Log.txt"), start(steady_clock::now()){
-    }
-    explicit Logger(const std::string& msg): fout("Log.txt"), start(steady_clock::now()){
-        fout << msg << " (time point = " << duration_cast<seconds>(steady_clock::now() - start).count()  << ")" << std::endl;
-    }
-    void Log(const std::string& msg){
-        fout << msg << " (time point = " << duration_cast<seconds>(steady_clock::now() - start).count()  << ")"<< std::endl;
-    }
-private:
-    std::ofstream fout;
-    std::chrono::steady_clock::time_point start;
-};
-
-const std::vector<std::vector<int>> DEFAULT_BATTLEFIELD = {{1, 1, 0, 1, 0, 0, 1, 1, 1, 1},
-                                                           {0, 0, 0, 1, 0, 0, 0, 0, 0, 0},
-                                                           {0, 0, 0, 1, 0, 0, 0, 0, 0, 1},
-                                                           {0, 1, 0, 0, 0, 0, 0, 0, 0, 1},
-                                                           {0, 1, 0, 0, 1, 1, 1, 0, 0, 0},
-                                                           {0, 1, 0, 0, 0, 0, 0, 0, 0, 0},
-                                                           {0, 0, 0, 1, 0, 0, 1, 0, 0, 0},
-                                                           {0, 1, 0, 0, 0, 0, 0, 0, 0, 1},
-                                                           {0, 0, 0, 0, 0, 1, 0, 0, 0, 1},
-                                                           {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
-
 class SeaBattleGame{
 public:
     SeaBattleGame(): battleField(DEFAULT_BATTLEFIELD), aliveCellCounter(0), shotCounter(0), hitCounter(0){
